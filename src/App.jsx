@@ -1,8 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CartProvider } from '../src/contexts/CartContext';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
+import CartPage from './pages/CartPage';
+
 function App() {
   return (
-    <>
-      <h1>Welcome to Santa Carla</h1>
-    </>
+    <CartProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/shop' element={<ShopPage />} />
+          <Route patch='/cart' element={<CartPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 
