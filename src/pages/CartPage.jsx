@@ -2,7 +2,9 @@ import { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
 
 function CartPage() {
-  const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
+  const { cartItems, removeFromCart, updateQuantity, clearCart } =
+    useContext(CartContext);
+  console.log('Cart items in CartPage:', cartItems);
 
   const renderCartItem = item => (
     <div key={item.product.id}>
@@ -19,11 +21,19 @@ function CartPage() {
     </div>
   );
 
+  const handleCheckout = () => {
+    alert('Thank you for your purchase!');
+    clearCart();
+  };
+
   return (
     <div>
       <h2>My Cart</h2>
       {cartItems.length > 0 ? (
-        cartItems.map(renderCartItem)
+        <>
+          {cartItems.map(renderCartItem)}
+          <button onClick={handleCheckout}>Checkout</button>
+        </>
       ) : (
         <p>Your cart is empty.</p>
       )}

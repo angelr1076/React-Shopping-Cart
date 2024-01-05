@@ -1,28 +1,47 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../contexts/CartContext';
+import '../styles/ProductCard.css';
 
 function ProductCard({ product }) {
   const [quantity, setQuantity] = useState(0);
+  const [showMessage, setShowMessage] = useState(false);
   const { addToCart } = useContext(CartContext);
 
-  const incrementQuantity = () => setQuantity(quantity + 1);
+  const messageTimer = useEffect(() => {
+    let timer;
+    if (showMessage) {
+      timer = setTimeout(() => setShowMessage(false), 1000);
+    }
+    return () => clearTimeout(timer);
+  }, [showMessage]);
+
+  const incrementQuantity = () => {
+    setQuantity(quantity + 1);
+    setShowMessage(false);
+  };
   const decrementQuantity = () => setQuantity(quantity > 0 ? quantity - 1 : 0);
 
   const handleAddToCart = () => {
-    addToCart(product, quantity);
-    setQuantity(0);
+    if (quantity > 0) {
+      addToCart(product, quantity);
+      setQuantity(0);
+      setShowMessage(false);
+    } else {
+      setShowMessage(true);
+    }
   };
 
   return (
     <div className='product-card'>
       <h3>{product.title}</h3>
-      <img src={product.image} alt={product.title} />
+      <img src={product.image} alt={product.title} className='productImage' />
       <p>${product.price}</p>
       <div>
         <button onClick={decrementQuantity}>-</button>
         <input type='number' value={quantity} readOnly />
         <button onClick={incrementQuantity}>+</button>
         <button onClick={handleAddToCart}>Add to Cart</button>
+        {showMessage && <p>Press the + button to add an item quantity.</p>}
       </div>
     </div>
   );
