@@ -4,7 +4,6 @@ import { CartContext } from '../contexts/CartContext';
 function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, clearCart } =
     useContext(CartContext);
-  console.log('Cart items in CartPage:', cartItems);
 
   const renderCartItem = item => (
     <div key={item.product.id}>

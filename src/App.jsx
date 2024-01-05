@@ -9,12 +9,14 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/shop' element={<ShopPage />} />
-          <Route path='/cart' element={<CartPage />} />
-        </Routes>
+        <div className='app-container'>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/shop' element={<ShopPage />} />
+            <Route path='/cart' element={<CartPage />} />
+          </Routes>
+        </div>
       </Router>
     </CartProvider>
   );

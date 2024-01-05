@@ -34,10 +34,14 @@ function ProductCard({ product }) {
 
   return (
     <div className='product-card'>
-      <h3>{product.title}</h3>
-      <img src={product.image} alt={product.title} className='productImage' />
-      <p>${product.price}</p>
-      <div>
+      <div className='title'>
+        <h3>{product.title}</h3>
+      </div>
+      <div className='content'>
+        <img src={product.image} alt={product.title} className='image' />
+        <p>${product.price}</p>
+      </div>
+      <div className='button-container'>
         <button onClick={decrementQuantity}>-</button>
         <input type='number' value={quantity} readOnly />
         <button onClick={incrementQuantity}>+</button>

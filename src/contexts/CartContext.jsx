@@ -11,7 +11,6 @@ function CartProvider({ children }) {
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
-    console.log('localStorage ', cartItems);
   }, [cartItems]);
 
   const addToCart = (product, quantityToAdd) => {
