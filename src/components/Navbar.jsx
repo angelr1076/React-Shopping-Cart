@@ -12,14 +12,15 @@ function Navbar() {
 
   return (
     <nav className='navbar'>
-      <div className='navbar-left'>
-        <Link to='/'>Home</Link>
-        <Link to='/shop'>Shop</Link>
-        <Link to='/cart'>Cart</Link>
+      <div className='logo-placeholder'>Logo</div>
+      <div className='navbar-links'>
+        <Link to='/'>Home</Link> |<Link to='/shop'>Shop</Link> |
+        <Link to='/cart'>
+          Cart
+          <span className='navbar__cart'>{totalItems}</span>
+        </Link>
       </div>
-      <div className='navbar-right'>
-        <div className='navbar__cart'>Cart Items: {totalItems}</div>
-      </div>
+      <div className='navbar-spacer'></div>
     </nav>
   );
 }

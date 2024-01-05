@@ -1,0 +1,16 @@
+@import '../styles/variables/variables.scss';
+@import '../styles/mixins/mixins.scss';
+
+.homepage {
+  box-sizing: border-box;
+  height: calc(100vh - $navbarHeight);
+  
+  @include defaultFlexContainer();
+
+  h1 {
+    font-family: $rubik;
+    font-size: 3rem;
+    color: $bloodRed;
+    margin: 0;
+  }
+}

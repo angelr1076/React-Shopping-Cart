@@ -1,9 +1,6 @@
+@import '../styles/mixins/mixins.scss';
+@import '../styles/variables/variables.scss';
+
 .products {
-  max-width: 1500px;
-  margin: 1em auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
+  @include defaultFlexContainer();
 }

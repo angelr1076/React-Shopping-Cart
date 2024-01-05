@@ -1,4 +1,4 @@
-@mixin defaultMain {
+@mixin defaultMain() {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -8,4 +8,25 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+}
+
+@mixin defaultButton() {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+@mixin defaultFlexContainer() {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }

@@ -1,4 +1,12 @@
 // Colors
-$black: rgb(12, 12, 12);
 $white: rgb(255, 255, 255);
+$offWhite: rgb(245, 245, 245);
+$black: rgb(12, 12, 12);
 $fadedBlack: rgb(51, 50, 50);
+$transparentBlack: rgba($fadedBlack, 0.9);
+$bloodRed: rgb(102, 0, 0);
+// Fonts
+$montserrat: 'Montserrat', sans-serif;
+$rubik: 'Rubik Doodle Shadow', system-ui;
+
+$navbarHeight: 60px;

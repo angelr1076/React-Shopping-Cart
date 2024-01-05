@@ -1,32 +1,26 @@
 .navbar {
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: sticky;
-  top: 0px;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: 100;
+  background-color: rgba(51, 50, 50, 0.9);
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.navbar a {
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  text-decoration: none;
-  font-family: rgb(255, 255, 255);
-  margin: 10px;
-}
-
-.navbar .links {
-  margin-right: 50px;
-}
-
-.navbar-left,
-.navbar-right {
+.navbar .navbar-links {
   display: flex;
+  justify-content: center;
   flex-grow: 1;
 }
-
-.navbar__cart {
+.navbar .navbar-links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 10px;
+}
+.navbar .navbar-spacer {
+  width: same-as-logo-width;
+}
+.navbar .navbar__cart {
   color: rgb(255, 255, 255);
 }/*# sourceMappingURL=Navbar.css.map */
