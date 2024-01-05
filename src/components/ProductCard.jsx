@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../contexts/CartContext';
+import PropTypes from 'prop-types';
 import '../styles/ProductCard.css';
 
 function ProductCard({ product }) {
@@ -7,7 +8,7 @@ function ProductCard({ product }) {
   const [showMessage, setShowMessage] = useState(false);
   const { addToCart } = useContext(CartContext);
 
-  const messageTimer = useEffect(() => {
+  useEffect(() => {
     let timer;
     if (showMessage) {
       timer = setTimeout(() => setShowMessage(false), 1000);
@@ -46,5 +47,13 @@ function ProductCard({ product }) {
     </div>
   );
 }
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default ProductCard;

@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 export const CartContext = createContext();
 
@@ -8,7 +9,7 @@ function CartProvider({ children }) {
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-  const setStorageEffect = useEffect(() => {
+  useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
     console.log('localStorage ', cartItems);
   }, [cartItems]);
@@ -64,5 +65,12 @@ function CartProvider({ children }) {
     </CartContext.Provider>
   );
 }
+
+CartProvider.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export { CartProvider };
