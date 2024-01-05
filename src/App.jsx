@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/shop' element={<ShopPage />} />
-          <Route patch='/cart' element={<CartPage />} />
+          <Route path='/cart' element={<CartPage />} />
         </Routes>
       </Router>
     </CartProvider>

@@ -13,6 +13,7 @@ function Navbar() {
     <nav>
       <Link to='/'>Home</Link>
       <Link to='/shop'>Shop</Link>
+      <Link to='/cart'>Cart</Link>
       <div>Cart Items: {totalItems}</div>
     </nav>
   );
