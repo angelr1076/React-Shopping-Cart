@@ -3,14 +3,13 @@
 
 .homepage {
     box-sizing: border-box;
-    height: calc(100vh - 60px);
+    // height: calc(100vh - 60px);
     max-width: 1500px;
-    
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 1em;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
     align-items: center;
   
@@ -30,4 +29,21 @@
   .description {
     flex: 2;
   }
+
+  .gallery {
+    text-align: center;
+
+    .images {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 20px; 
+  
+      img {
+        max-width: 400px; 
+        height: 300px;
+      }
+    }
+  }
+  
 }
