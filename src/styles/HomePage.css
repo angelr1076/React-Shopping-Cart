@@ -4,12 +4,22 @@
   max-width: 1500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1em;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
-.homepage h1 {
-  font-family: "Rubik Doodle Shadow", system-ui;
-  font-size: 3rem;
-  color: rgb(102, 0, 0);
-  margin: 0;
+.homepage .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+.homepage .logo {
+  flex: 1;
+  margin-right: 20px;
+}
+.homepage .description {
+  flex: 2;
 }/*# sourceMappingURL=HomePage.css.map */

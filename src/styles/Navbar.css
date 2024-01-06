@@ -4,23 +4,18 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(51, 50, 50, 0.9);
+  background-color: rgb(12, 12, 12);
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.navbar .navbar-links {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-.navbar .navbar-links a {
-  color: rgb(255, 255, 255);
+.navbar a {
   text-decoration: none;
-  margin: 10px;
-}
-.navbar .navbar-spacer {
-  width: same-as-logo-width;
-}
-.navbar .navbar__cart {
   color: rgb(255, 255, 255);
+}
+.navbar .logo-placeholder {
+  margin-left: 11px;
+}
+.navbar .navbar-cart {
+  margin-right: 11px;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -2,15 +2,32 @@
 @import '../styles/mixins/mixins.scss';
 
 .homepage {
-  box-sizing: border-box;
-  height: calc(100vh - $navbarHeight);
+    box-sizing: border-box;
+    height: calc(100vh - 60px);
+    max-width: 1500px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1em;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   
-  @include defaultFlexContainer();
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+  }
 
-  h1 {
-    font-family: $rubik;
-    font-size: 3rem;
-    color: $bloodRed;
-    margin: 0;
+  .logo {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .description {
+    flex: 2;
   }
 }

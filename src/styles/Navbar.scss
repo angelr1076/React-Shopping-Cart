@@ -7,34 +7,24 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: $transparentBlack;
+  background-color: $black;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
-  .logo-placeholder {
-    // Style your logo placeholder
-    // For example, set a fixed width or add your logo image
-  }
-
-  .navbar-links {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1; // Allows this div to take up the remaining space
-
-    a {
-      color: $white;
-      text-decoration: none;
-      margin: 10px;
-    }
-  }
-
-  .navbar-spacer {
-    // The spacer should be the same width as the logo placeholder
-    // If the logo is an image or has a defined width, match that width here
-    width: same-as-logo-width; // Replace with the actual width
-  }
-
-  .navbar__cart {
+  a {
+    text-decoration: none;
     color: $white;
+  }
+
+  .logo-placeholder {
+    margin-left: 11px;
+  }
+
+  .navbar-shop {
+  }
+
+  .navbar-cart {
+    margin-right: 11px;
   }
 }
