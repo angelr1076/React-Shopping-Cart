@@ -3,7 +3,7 @@
 
 .homepage {
     box-sizing: border-box;
-    height: calc(100vh - 60px);
+    height: calc(100vh - #{$navbarHeight} - #{$footerHeight});
     max-width: 1500px;
     display: flex;
     gap: 1em;

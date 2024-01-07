@@ -16,7 +16,7 @@ function HomePage() {
         />
         <p className='description'>
           Dedicated to the (night)lifestyle of Santa Carla, its boardwalk, and
-          its residents. Here you can find information about the best surf
+          its residents. Soon, you'll find information about the best surf
           spots, local events, and more.
         </p>
       </section>
