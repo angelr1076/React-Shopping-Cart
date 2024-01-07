@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .product-card {
-  border: 2px solid rgba(51, 50, 50, 0.9);
+  border: 2px solid rgba(20, 20, 20, 0.7);
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;

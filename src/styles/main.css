@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #242424;
@@ -16,5 +17,6 @@ body {
   padding: 0;
   height: 100%;
   background-color: rgb(245, 245, 245);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

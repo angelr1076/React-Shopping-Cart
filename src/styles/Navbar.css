@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .navbar {
   width: 100%;
   height: 50px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgb(51, 50, 50);
+  background-color: rgba(20, 20, 20, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +19,7 @@
 }
 .navbar .logo-placeholder {
   margin-left: 11px;
+  display: flex;
 }
 .navbar .navbar-cart {
   margin-right: 11px;

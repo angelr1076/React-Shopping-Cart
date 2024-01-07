@@ -1,5 +1,7 @@
+@import '../variables/variables.scss';
+
 @mixin defaultMain() {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,6 +23,17 @@
   &:hover {
     background-color: #0056b3;
   }
+}
+
+@mixin bloodRedButton() {
+  align-self: flex-end;
+  display: inline-block;
+  background-color: $bloodRed;
+  color: $white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 @mixin defaultFlexContainer() {

@@ -4,10 +4,13 @@
 .navbar {
   width: 100%;
   height: $navbarHeight;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: $fadedBlack;
+  background-color: $transparentBlack;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +22,8 @@
 
   .logo-placeholder {
     margin-left: 11px;
+
+    display: flex;
   }
 
   .navbar-shop {

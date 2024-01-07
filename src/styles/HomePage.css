@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .homepage {
   box-sizing: border-box;
   height: calc(100vh - 50px - 50px);
   max-width: 1500px;
   display: flex;
   gap: 1em;
+  padding: 1.5em;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -14,6 +16,7 @@
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 0.5em;
+  max-width: 900px;
 }
 .homepage .hero {
   display: flex;
@@ -28,7 +31,24 @@
 .homepage .description {
   flex: 2;
 }
-.homepage .border {
-  border: 3px solid rgb(51, 50, 50);
-  padding: 2em;
+.homepage .hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.homepage .shop-button {
+  align-self: flex-end;
+  display: inline-block;
+  background-color: rgb(102, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.homepage .shop-button:hover {
+  background-color: rgb(108, 27, 27);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=HomePage.css.map */

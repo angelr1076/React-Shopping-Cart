@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap');
+
 // Colors
 $white: rgb(255, 255, 255);
 $offWhite: rgb(245, 245, 245);
 $black: rgb(12, 12, 12);
 $fadedBlack: rgb(51, 50, 50);
-$transparentBlack: rgba($fadedBlack, 0.9);
+$transparentBlack: rgba(20, 20, 20, 0.7);
+
 $bloodRed: rgb(102, 0, 0);
+$bloodRedFaded: rgb(108, 27, 27);
 // Fonts
-$montserrat: 'Montserrat', sans-serif;
+$montserrat: 'Montserrat Alternates', sans-serif;
 $rubik: 'Rubik Doodle Shadow', system-ui;
 
 $navbarHeight: 50px;
