@@ -1,12 +1,19 @@
 .homepage {
   box-sizing: border-box;
+  height: calc(100vh - 60px);
   max-width: 1500px;
   display: flex;
-  flex-wrap: wrap;
   gap: 1em;
-  justify-content: center;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.homepage .title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 .homepage .hero {
   display: flex;
@@ -21,16 +28,7 @@
 .homepage .description {
   flex: 2;
 }
-.homepage .gallery {
-  text-align: center;
-}
-.homepage .gallery .images {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.homepage .gallery .images img {
-  max-width: 400px;
-  height: 300px;
+.homepage .border {
+  border: 3px solid rgb(51, 50, 50);
+  padding: 2em;
 }/*# sourceMappingURL=HomePage.css.map */

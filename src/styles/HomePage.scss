@@ -3,47 +3,41 @@
 
 .homepage {
     box-sizing: border-box;
-    // height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
     max-width: 1500px;
-
     display: flex;
-    flex-wrap: wrap;
     gap: 1em;
-    justify-content: center;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
   
-  
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-  }
-
-  .logo {
-    flex: 1;
-    margin-right: 20px;
-  }
-
-  .description {
-    flex: 2;
-  }
-
-  .gallery {
-    text-align: center;
-
-    .images {
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      gap: 20px; 
-  
-      img {
-        max-width: 400px; 
-        height: 300px;
-      }
+    .title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
     }
-  }
   
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+    }
+
+
+    .logo {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .description {
+      flex: 2;
+    }
+    
+    .border {
+      border: 3px solid $fadedBlack;
+      padding: 2em;
+    }
 }
