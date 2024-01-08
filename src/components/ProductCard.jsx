@@ -34,20 +34,20 @@ function ProductCard({ product }) {
 
   return (
     <div className='product-card'>
-      <div className='title'>
+      <img src={product.image} alt={product.title} className='product-image' />
+      <div className='product-info'>
         <h3>{product.title}</h3>
-      </div>
-      <div className='content'>
-        <img src={product.image} alt={product.title} className='image' />
         <p>${product.price}</p>
       </div>
-      <div className='button-container'>
+      <div className='product-actions'>
         <button onClick={decrementQuantity}>-</button>
         <input type='number' value={quantity} readOnly />
         <button onClick={incrementQuantity}>+</button>
         <button onClick={handleAddToCart}>Add to Cart</button>
-        {showMessage && <p>Press the + button to add an item quantity.</p>}
       </div>
+      {showMessage && (
+        <p className='message'>Press the + button to add an item quantity.</p>
+      )}
     </div>
   );
 }

@@ -1,84 +1,75 @@
-@import './variables/variables.scss';
+@import '../styles/mixins/mixins.scss';
+@import '../styles/variables/variables.scss';
 
 .product-card {
-  border: 2px solid $transparentBlack;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px;
-  width: 300px; 
-  text-align: center;
   background-color: $white;
-  transition: transform 0.2s ease;
-
+  box-shadow: 0 2px 4px rgba($black, 0.1); 
+  margin: 10px;
+  width: 250px; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 500px;
+  align-items: center; 
+  transition: box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(101%);
-  }
+    box-shadow: 0 4px 8px rgba($black, 0.2); 
 
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .button-container {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  h3 {
-    color: #333;
-    padding: 10px;
-    margin-top: 0;
-    font-weight: 900;
-    font-size: 1rem;
-  }
-
-  p {
-    color: #666;
-    margin: 0;
-    padding: 5px 10px;
-  }
-
-  .image {
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  div {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    gap: 10px;
-  }
-
-  button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #0056b3;
+    .product-image {
+      transform: scale(1.05); 
     }
   }
 
-  input[type='number'] {
-    width: 50px;
+  .product-image {
+    max-width: 200px; 
+    max-height: 300px;
+    margin-top: 10px; 
+    transition: transform 0.3s ease;
+  }
+
+  .product-info {
+    padding: 10px;
     text-align: center;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+    h3 {
+      margin: 0;
+      color: $black;
+      font-size: 1rem; 
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: $fadedBlack;
+      font-size: 0.875rem; 
+      font-weight: 400;
+    }
+  }
+
+  .product-actions {
+    padding: 10px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      @include buyButtons(); 
+    }
+
+    input[type='number'] {
+      width: 50px;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  }
+
+  .message {
+    text-align: center;
+    font-size: 0.75rem;
+    color: $bloodRed;
+    padding: 10px;
   }
 }
-

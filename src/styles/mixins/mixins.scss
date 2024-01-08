@@ -12,16 +12,20 @@
   text-rendering: optimizeLegibility;
 }
 
-@mixin defaultButton() {
-  padding: 5px 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
+@mixin buyButtons() {
+  align-self: flex-end;
+  display: inline-block;
+  background-color: $black;
+  color: $white;
+  padding: 4px 7px;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: $fadedBlack;
   }
 }
 
@@ -34,6 +38,13 @@
   font-size: 20px;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    background-color: $bloodRedFaded;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
 }
 
 @mixin defaultFlexContainer() {

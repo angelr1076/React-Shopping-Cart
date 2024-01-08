@@ -1,71 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .product-card {
-  border: 2px solid rgba(20, 20, 20, 0.7);
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px;
-  width: 300px;
-  text-align: center;
   background-color: rgb(255, 255, 255);
-  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(12, 12, 12, 0.1);
+  margin: 10px;
+  width: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 500px;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
 }
 .product-card:hover {
-  transform: scale(101%);
+  box-shadow: 0 4px 8px rgba(12, 12, 12, 0.2);
 }
-.product-card .content {
-  display: flex;
-  flex-direction: column;
+.product-card:hover .product-image {
+  transform: scale(1.05);
 }
-.product-card .button-container {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-}
-.product-card h3 {
-  color: #333;
-  padding: 10px;
-  margin-top: 0;
-  font-weight: 900;
-  font-size: 1rem;
-}
-.product-card p {
-  color: #666;
-  margin: 0;
-  padding: 5px 10px;
-}
-.product-card .image {
+.product-card .product-image {
   max-width: 200px;
-  max-height: 200px;
-  display: block;
-  margin: 0 auto;
+  max-height: 300px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
 }
-.product-card div {
+.product-card .product-info {
   padding: 10px;
+  text-align: center;
+}
+.product-card .product-info h3 {
+  margin: 0;
+  color: rgb(12, 12, 12);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.product-card .product-info p {
+  margin: 0;
+  color: rgb(51, 50, 50);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.product-card .product-actions {
+  padding: 10px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
   gap: 10px;
 }
-.product-card button {
-  padding: 5px 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
+.product-card .product-actions button {
+  align-self: flex-end;
+  display: inline-block;
+  background-color: rgb(12, 12, 12);
+  color: rgb(255, 255, 255);
+  padding: 4px 7px;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.product-card button:hover {
-  background-color: #0056b3;
+.product-card .product-actions button:hover {
+  background-color: rgb(51, 50, 50);
 }
-.product-card input[type=number] {
+.product-card .product-actions input[type=number] {
   width: 50px;
   text-align: center;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+.product-card .message {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgb(102, 0, 0);
+  padding: 10px;
 }/*# sourceMappingURL=ProductCard.css.map */
