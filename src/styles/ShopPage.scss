@@ -3,4 +3,6 @@
 
 .products {
   @include defaultFlexContainer();
+  background-color: $white;
+  margin: 1em;
 }
