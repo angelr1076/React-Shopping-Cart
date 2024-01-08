@@ -59,6 +59,14 @@
 .product-card .product-actions button:hover {
   background-color: rgb(51, 50, 50);
 }
+.product-card .product-actions .btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(12, 12, 12);
+}
+.product-card .product-actions .btn:hover {
+  background-color: rgb(255, 255, 255);
+}
 .product-card .product-actions input[type=number] {
   width: 50px;
   text-align: center;

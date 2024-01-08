@@ -47,6 +47,16 @@
   }
 }
 
+@mixin btn {
+  border: none;
+  background-color: transparent;
+  color: $black;
+
+  &:hover {
+    background-color: $white;
+  }
+}
+
 @mixin defaultFlexContainer() {
   max-width: 1500px;
   display: flex;

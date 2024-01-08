@@ -40,9 +40,13 @@ function ProductCard({ product }) {
         <p>${product.price}</p>
       </div>
       <div className='product-actions'>
-        <button onClick={decrementQuantity}>-</button>
+        <button className='minus btn' onClick={decrementQuantity}>
+          -
+        </button>
         <input type='number' value={quantity} readOnly />
-        <button onClick={incrementQuantity}>+</button>
+        <button className='plus btn' onClick={incrementQuantity}>
+          +
+        </button>
         <button onClick={handleAddToCart}>Add to Cart</button>
       </div>
       {showMessage && (

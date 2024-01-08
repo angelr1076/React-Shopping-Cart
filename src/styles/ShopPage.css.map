@@ -1,1 +1,1 @@
-{"version":3,"sources":["variables/variables.scss","ShopPage.scss","mixins/mixins.scss","ShopPage.css"],"names":[],"mappings":"AAAQ,uGAAA;AAAA,uGAAA;ACGR;EC+CE,iBAAA;EACA,aAAA;EACA,eAAA;EACA,uBAAA;EACA,QAAA;EDjDA,oCDFM;ECGN,WAAA;AEIF","file":"ShopPage.css"}
+{"version":3,"sources":["variables/variables.scss","ShopPage.scss","mixins/mixins.scss","ShopPage.css"],"names":[],"mappings":"AAAQ,uGAAA;AAAA,uGAAA;ACGR;ECyDE,iBAAA;EACA,aAAA;EACA,eAAA;EACA,uBAAA;EACA,QAAA;ED3DA,oCDFM;ECGN,WAAA;AEIF","file":"ShopPage.css"}
