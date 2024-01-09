@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../contexts/CartContext';
+const url = import.meta.env.VITE_IMG_URL;
 import PropTypes from 'prop-types';
 import '../styles/ProductCard.css';
 
@@ -24,20 +25,27 @@ function ProductCard({ product }) {
 
   const handleAddToCart = () => {
     if (quantity > 0) {
-      addToCart(product, quantity);
+      addToCart({
+        ...product,
+        quantity: quantity,
+      });
       setQuantity(0);
-      setShowMessage(false);
     } else {
       setShowMessage(true);
     }
   };
 
+  const imageUrl = product.imageUrl.startsWith('http')
+    ? product.imageUrl
+    : `${url}${product.imageUrl}`;
+  // console.log(imageUrl);
+
   return (
     <div className='product-card'>
-      <img src={product.image} alt={product.title} className='product-image' />
+      <img src={imageUrl} alt={product.title} className='product-image' />
       <div className='product-info'>
         <h3>{product.title}</h3>
-        <p>${product.price}</p>
+        <p>${product.price.toFixed(2)}</p>
       </div>
       <div className='product-actions'>
         <button className='minus btn' onClick={decrementQuantity}>
@@ -50,7 +58,7 @@ function ProductCard({ product }) {
         <button onClick={handleAddToCart}>Add to Cart</button>
       </div>
       {showMessage && (
-        <p className='message'>Press the + button to add an item quantity.</p>
+        <p className='message'>Please add a quantity before adding to cart.</p>
       )}
     </div>
   );
@@ -59,7 +67,7 @@ function ProductCard({ product }) {
 ProductCard.propTypes = {
   product: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
   }).isRequired,
 };
