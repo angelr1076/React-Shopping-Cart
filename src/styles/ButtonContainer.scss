@@ -1,0 +1,30 @@
+@import '../styles/mixins/mixins.scss';
+
+.button-container {
+  @include buttonContainerStyles();
+      button {
+        @include buyButtons();
+      }
+  
+      .btn {
+        @include btn();
+      }
+  
+      input[type='number'] {
+        width: 50px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+    .icon {
+      font-size: 1rem;
+    }
+  
+    .message {
+      text-align: center;
+      font-size: 0.75rem;
+      color: $bloodRed;
+    }
+}

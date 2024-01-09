@@ -35,48 +35,4 @@
   color: rgb(51, 50, 50);
   font-size: 0.875rem;
   font-weight: 400;
-}
-.product-card .product-actions {
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.product-card .product-actions button {
-  align-self: flex-end;
-  display: inline-block;
-  background-color: rgb(12, 12, 12);
-  color: rgb(255, 255, 255);
-  padding: 4px 7px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.product-card .product-actions button:hover {
-  background-color: rgb(51, 50, 50);
-}
-.product-card .product-actions .btn {
-  border: none;
-  background-color: transparent;
-  color: rgb(12, 12, 12);
-}
-.product-card .product-actions .btn:hover {
-  background-color: rgb(255, 255, 255);
-}
-.product-card .product-actions input[type=number] {
-  width: 50px;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-.product-card .message {
-  text-align: center;
-  font-size: 0.75rem;
-  color: rgb(102, 0, 0);
-  padding: 10px;
 }/*# sourceMappingURL=ProductCard.css.map */

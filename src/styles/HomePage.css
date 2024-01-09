@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .homepage {
   box-sizing: border-box;
-  height: calc(100vh - 50px - 50px);
+  height: calc(100vh - 60px - 50px);
   display: flex;
   gap: 1em;
   padding: 1.5em;

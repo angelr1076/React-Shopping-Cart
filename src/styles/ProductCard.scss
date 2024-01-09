@@ -44,36 +44,4 @@
       font-weight: 400;
     }
   }
-
-  .product-actions {
-    padding: 10px;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    button {
-      @include buyButtons(); 
-    }
-
-    .btn {
-      @include btn();
-    }
-
-    input[type='number'] {
-      width: 50px;
-      text-align: center;
-      padding: 5px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-  }
-
-  .message {
-    text-align: center;
-    font-size: 0.75rem;
-    color: $bloodRed;
-    padding: 10px;
-  }
 }
