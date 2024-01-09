@@ -2,7 +2,12 @@
 @import '../styles/variables/variables.scss';
 
 .products {
-  @include defaultFlexContainer();
   background-color: $white;
   margin: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  gap: 1em;
 }

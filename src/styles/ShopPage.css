@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .products {
-  max-width: 1500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
   background-color: rgb(255, 255, 255);
   margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  gap: 1em;
 }/*# sourceMappingURL=ShopPage.css.map */

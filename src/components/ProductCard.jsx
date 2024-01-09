@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
 const url = import.meta.env.VITE_IMG_URL;
 import PropTypes from 'prop-types';
@@ -38,11 +39,12 @@ function ProductCard({ product }) {
   const imageUrl = product.imageUrl.startsWith('http')
     ? product.imageUrl
     : `${url}${product.imageUrl}`;
-  // console.log(imageUrl);
 
   return (
     <div className='product-card'>
-      <img src={imageUrl} alt={product.title} className='product-image' />
+      <Link to={`/shop/${product.id}`}>
+        <img src={imageUrl} alt={product.title} className='product-image' />
+      </Link>
       <div className='product-info'>
         <h3>{product.title}</h3>
         <p>${product.price.toFixed(2)}</p>
@@ -66,6 +68,7 @@ function ProductCard({ product }) {
 
 ProductCard.propTypes = {
   product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     imageUrl: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,

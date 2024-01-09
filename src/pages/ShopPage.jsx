@@ -9,15 +9,15 @@ function ShopPage() {
   useEffect(() => {
     fetchBoards().then(data => {
       const transformedProducts = data.data.map(item => ({
+        id: item['3']?.value,
         title: item['6']?.value,
         description: item['7']?.value,
         price: item['8']?.value,
         rating: item['9']?.value,
-        imageUrl: item['10']?.value.versions[0].fileName,
+        imageUrl: item['14']?.value,
         delivery: item['11']?.value,
         seller: item['12']?.value,
       }));
-      console.log(data.data);
       setProducts(transformedProducts);
     });
   }, []);
