@@ -5,7 +5,7 @@ import logo from '../assets/images/logo-transparent-png.png';
 function HomePage() {
   return (
     <div className='homepage'>
-      <h1 className='title'>
+      <h1 className='homepage__title'>
         Welcome to Santa Carla. Sleep all day, surf all night.
       </h1>
       <section className='hero border'>

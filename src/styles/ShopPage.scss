@@ -1,14 +1,30 @@
-@import '../styles/mixins/mixins.scss';
 @import '../styles/variables/variables.scss';
+@import '../styles/mixins/mixins.scss';
 
-.products {
-  background-color: $white;
-  margin: 1em;
-  padding-bottom: 2em;
-
+.product-page {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 1500px;
-  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  
+  .product-page__title {
+    font-size: $pageHeaderSize;
+    font-weight: 700;
+    margin: 0;
+    background-color: $white;
+    padding: 0 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .products {
+    background-color: $white;
+    margin: 1em;
+    padding-bottom: 2em;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    gap: 1em;
+  }
 }

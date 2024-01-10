@@ -1,36 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-.cart {
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.cart-container .cart {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(255, 255, 255);
+  padding: 0 2em;
   max-width: 1200px;
-  margin: 0 0 0 30px;
+  min-width: 300px;
+  width: 80%;
+  margin: 0 auto;
   height: calc(100vh - 60px - 50px);
 }
-.cart .items {
+.cart-container .cart .cart__title {
+  font-size: 2rem;
+}
+.cart-container .cart .items {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.cart .cart-item-divider {
+.cart-container .cart .cart-item-divider {
   width: 75%;
   border: none;
   border-top: 1px solid rgb(230, 230, 230);
 }
-.cart .cart-item {
+.cart-container .cart .cart-item {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.cart .cart-buttons {
+.cart-container .cart .cart-buttons {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
   margin: 20px 0;
 }
-.cart .cart-buttons .buy {
+.cart-container .cart .cart-buttons .buy {
   display: flex;
   align-self: flex-end;
   display: inline-block;
@@ -45,16 +57,16 @@
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.cart .cart-buttons .buy:hover {
+.cart-container .cart .cart-buttons .buy:hover {
   background-color: rgb(51, 50, 50);
 }
-.cart .cart-buttons .icon {
+.cart-container .cart .cart-buttons .icon {
   font-size: 1.25rem;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
-.cart .cart-buttons .checkout {
+.cart-container .cart .cart-buttons .checkout {
   display: flex;
   align-self: flex-end;
   display: inline-block;
@@ -71,6 +83,6 @@
   padding: 10px 20px;
   font-size: 1rem;
 }
-.cart .cart-buttons .checkout:hover {
+.cart-container .cart .cart-buttons .checkout:hover {
   background-color: rgb(51, 50, 50);
 }/*# sourceMappingURL=CartPage.css.map */

@@ -12,8 +12,8 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.homepage .title {
-  font-size: 2em;
+.homepage .homepage__title {
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5em;
   max-width: 800px;

@@ -23,10 +23,13 @@ function ShopPage() {
   }, []);
 
   return (
-    <div className='products'>
-      {products.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))}
+    <div className='product-page'>
+      <h2 className='product-page__title'>Our Products</h2>
+      <div className='products'>
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} />
+        ))}
+      </div>
     </div>
   );
 }

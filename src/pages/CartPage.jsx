@@ -41,22 +41,24 @@ function CartPage() {
   };
 
   return (
-    <div className='cart'>
-      <h2>My Cart</h2>
-      <h3>Total: ${formatPriceWithComma(totalPrice)}</h3>
-      {cartItems.length > 0 ? (
-        <>
-          <div className='items'>{cartItems.map(renderCartItem)}</div>
-          <hr className='cart-item-divider' />
-          <div className='cart-buttons'>
-            <button className='checkout btn' onClick={handleCheckout}>
-              Checkout
-            </button>
-          </div>
-        </>
-      ) : (
-        <p>Your cart is empty.</p>
-      )}
+    <div className='cart-container'>
+      <div className='cart'>
+        <h1 className='cart__title'>My Cart</h1>
+        <h3>Total: ${formatPriceWithComma(totalPrice)}</h3>
+        {cartItems.length > 0 ? (
+          <>
+            <div className='items'>{cartItems.map(renderCartItem)}</div>
+            <hr className='cart-item-divider' />
+            <div className='cart-buttons'>
+              <button className='checkout btn' onClick={handleCheckout}>
+                Checkout
+              </button>
+            </div>
+          </>
+        ) : (
+          <p>Your cart is empty.</p>
+        )}
+      </div>
     </div>
   );
 }
