@@ -5,6 +5,7 @@ import '../styles/ShopPage.css';
 
 function ShopPage() {
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchBoards().then(data => {
@@ -19,17 +20,22 @@ function ShopPage() {
         seller: item['12']?.value,
       }));
       setProducts(transformedProducts);
+      setIsLoading(false);
     });
   }, []);
 
   return (
     <div className='product-page'>
       <h2 className='product-page__title'>Our Products</h2>
-      <div className='products'>
-        {products.map((product, index) => (
-          <ProductCard key={index} product={product} />
-        ))}
-      </div>
+      {isLoading ? (
+        <h2>Loading...</h2>
+      ) : (
+        <div className='products'>
+          {products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
