@@ -2,6 +2,7 @@
 
 // Colors
 $white: rgb(255, 255, 255);
+$fadedWhite: rgba(245, 245, 245, 0.5);
 $offWhite: #e3e6e6;
 $black: rgb(12, 12, 12);
 $fadedBlack: rgb(51, 50, 50);
@@ -12,6 +13,16 @@ $blue: rgb(0, 0, 255);
 $bloodRed: rgb(102, 0, 0);
 $bloodRedFaded: rgb(108, 27, 27);
 $gold: rgb(255, 215, 0);
+
+// City Sunset Color Palette
+$sunsetYellow: #eeaf61;
+$sunsetOrange: #fb9062;
+$sunsetRed: #ee5d6c;
+$sunsetFadedRed: #e86769;
+$sunsetPink:#ce4993;
+$sunsetPurple: #6a0d83;
+$sunsetBlue: #0d6a83;
+$sunsetFadedBlue: #256a7d;
 
 // Fonts
 $montserrat: 'Montserrat Alternates', sans-serif;

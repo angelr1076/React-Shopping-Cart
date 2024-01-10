@@ -15,12 +15,19 @@
     padding: 0 1em;
     width: 100%;
     text-align: center;
+    @include containerShadow();
+  }
+
+  .loading-message {
+    font-size: 1.5rem;
+    color: $sunsetBlue;
   }
 
   .products {
     background-color: $white;
     margin: 1em;
     padding-bottom: 2em;
+    @include containerShadow();
   
     display: flex;
     flex-wrap: wrap;

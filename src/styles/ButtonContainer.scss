@@ -3,8 +3,8 @@
 
 .button-container {
   @include buttonContainerStyles();
-    button {
-      @include buyButtons();
+    .add {
+      @include buyButtons($sunsetRed);
     }
 
     input[type='number'] {

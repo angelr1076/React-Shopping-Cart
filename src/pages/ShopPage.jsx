@@ -28,7 +28,7 @@ function ShopPage() {
     <div className='product-page'>
       <h2 className='product-page__title'>Our Products</h2>
       {isLoading ? (
-        <h2>Loading...</h2>
+        <p className='loading-message'>Loading...</p>
       ) : (
         <div className='products'>
           {products.map((product, index) => (

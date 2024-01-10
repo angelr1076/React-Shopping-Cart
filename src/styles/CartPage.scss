@@ -19,7 +19,8 @@
     min-width: 300px;
     width: 80%;
     margin: 0 auto;
-
+    @include containerShadow();
+    
     .cart__title {
       font-size: $pageHeaderSize;
     }
@@ -50,7 +51,7 @@
 
       
       .buy {
-          @include buyButtons();
+          @include buyButtons($sunsetRed);
         }
 
       .icon {
@@ -61,7 +62,7 @@
       }
 
       .checkout {
-        @include buyButtons();
+        @include buyButtons($sunsetBlue);
         padding: 10px 20px;
         font-size: 1rem;
       }

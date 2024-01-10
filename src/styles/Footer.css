@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;&display=swap");
 footer {
   height: 50px;
   display: flex;
   justify-content: center;
-  background-color: rgb(51, 50, 50);
+  background-color: #fb9062;
   color: rgb(255, 255, 255);
   align-items: center;
 }/*# sourceMappingURL=Footer.css.map */

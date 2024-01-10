@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;&display=swap");
 .button-container {
   display: flex;
   justify-content: center;
@@ -13,27 +13,27 @@
   width: 50px;
   text-align: center;
   padding: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
 }
 .button-container .btn {
   border: none;
   background-color: transparent;
-  color: rgb(12, 12, 12);
+  color: #0d6a83;
 }
 .button-container .btn:hover {
-  background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .button-container .message {
   text-align: center;
   font-size: 0.75rem;
   color: rgb(102, 0, 0);
 }
-.button-container button {
+.button-container .add {
   display: flex;
   align-self: flex-end;
   display: inline-block;
-  background-color: rgb(12, 12, 12);
+  background-color: #ee5d6c;
   color: rgb(255, 255, 255);
   padding: 0.75em 1em;
   font-size: 12px;
@@ -44,8 +44,8 @@
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.button-container button:hover {
-  background-color: rgb(51, 50, 50);
+.button-container .add:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 .button-container input[type=number] {
   width: 50px;
