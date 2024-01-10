@@ -9,7 +9,7 @@ import '../styles/Navbar.css';
 function Navbar() {
   const { cartItems } = useContext(CartContext);
   const totalItems = cartItems.reduce((total, item) => {
-    const itemQuantity = Number(item.product.quantity) || 0;
+    const itemQuantity = item.quantity || 0;
     return total + itemQuantity;
   }, 0);
 

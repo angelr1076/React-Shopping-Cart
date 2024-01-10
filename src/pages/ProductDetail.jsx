@@ -46,9 +46,9 @@ function ProductDetail() {
       <div className='product-details'>
         <h2>{product.title}</h2>
         <p>{product.description}</p>
-        <p>${product.price.toFixed(2)}</p>
         <Ratings rating={product.rating} />
-        <p>{product.delivery}</p>
+        <p style={{ fontWeight: 'bold' }}>${product.price.toFixed(2)}</p>
+        <p style={{ fontSize: '15px', color: 'blue' }}>{product.delivery}</p>
         <br />
         <hr style={{ width: '75%' }} />
         <ButtonContainer product={product} />

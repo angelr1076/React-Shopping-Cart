@@ -8,13 +8,19 @@ function CartProvider({ children }) {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
+    const total = cartItems.reduce(
+      (sum, item) => sum + item.quantity * item.product.price,
+      0
+    );
+    setTotalPrice(total);
   }, [cartItems]);
 
   const addToCart = (product, quantityToAdd) => {
-    const numericQuantityToAdd = Number(quantityToAdd);
+    const numToAdd = Number(quantityToAdd);
 
     setCartItems(prevItems => {
       const existingItemIndex = prevItems.findIndex(
@@ -24,11 +30,11 @@ function CartProvider({ children }) {
       if (existingItemIndex !== -1) {
         return prevItems.map((item, index) =>
           index === existingItemIndex
-            ? { ...item, quantity: item.quantity + numericQuantityToAdd }
+            ? { ...item, quantity: item.quantity + numToAdd }
             : item
         );
       } else {
-        return [...prevItems, { product, quantity: numericQuantityToAdd }];
+        return [...prevItems, { product, quantity: numToAdd }];
       }
     });
   };
@@ -40,10 +46,11 @@ function CartProvider({ children }) {
   };
 
   const updateQuantity = (productToUpdate, newQuantity) => {
+    const numToAdd = Number(newQuantity);
     setCartItems(prevItems =>
       prevItems.map(item =>
         item.product.id === productToUpdate.id
-          ? { ...item, quantity: newQuantity }
+          ? { ...item, quantity: numToAdd }
           : item
       )
     );
@@ -61,6 +68,7 @@ function CartProvider({ children }) {
         removeFromCart,
         updateQuantity,
         clearCart,
+        totalPrice,
       }}>
       {children}
     </CartContext.Provider>

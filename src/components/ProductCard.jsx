@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ButtonContainer from './ButtonContainer';
+import { formatPriceWithComma, truncateTitle } from '../utils/Helpers';
 import Ratings from './Ratings';
 import '../styles/ProductCard.css';
 
@@ -17,9 +18,9 @@ function ProductCard({ product }) {
         </div>
       </Link>
       <div className='product-info'>
-        <h3 style={{ marginBottom: '5px' }}>{product.title}</h3>
+        <h3 style={{ marginBottom: '5px' }}>{truncateTitle(product.title)}</h3>
         <Ratings rating={product.rating} className='ratings-center' />
-        <p>${product.price}</p>
+        <p>${formatPriceWithComma(product.price.toFixed(2))}</p>
       </div>
       <ButtonContainer product={product} />
     </div>

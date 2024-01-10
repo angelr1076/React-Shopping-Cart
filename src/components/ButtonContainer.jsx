@@ -33,7 +33,7 @@ function ButtonContainer({ product }) {
 
   const handleAddToCart = () => {
     if (quantity > 0) {
-      addToCart({ ...product, quantity });
+      addToCart(product, quantity);
       setQuantity(0);
     } else {
       setShowMessage(true);
