@@ -2,6 +2,54 @@
 @import '../styles/mixins/mixins.scss';
 
 .cart {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  max-width: 1200px;
+  margin: 0 0 0 30px;
   height: calc(100vh - #{$navbarHeight} - #{$footerHeight});
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .cart-item-divider {
+    width: 75%;
+    border: none;
+    border-top: 1px solid $lightGrey;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cart-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+
+    
+    .buy {
+        @include buyButtons();
+      }
+
+    .icon {
+      font-size: 1.25rem;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+
+    .checkout {
+      @include buyButtons();
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
 }

@@ -1,6 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
 .cart {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  max-width: 1200px;
+  margin: 0 0 0 30px;
   height: calc(100vh - 60px - 50px);
+}
+.cart .items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cart .cart-item-divider {
+  width: 75%;
+  border: none;
+  border-top: 1px solid rgb(230, 230, 230);
+}
+.cart .cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart .cart-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 20px 0;
+}
+.cart .cart-buttons .buy {
+  display: flex;
+  align-self: flex-end;
+  display: inline-block;
+  background-color: rgb(12, 12, 12);
+  color: rgb(255, 255, 255);
+  padding: 0.75em 1em;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cart .cart-buttons .buy:hover {
+  background-color: rgb(51, 50, 50);
+}
+.cart .cart-buttons .icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.cart .cart-buttons .checkout {
+  display: flex;
+  align-self: flex-end;
+  display: inline-block;
+  background-color: rgb(12, 12, 12);
+  color: rgb(255, 255, 255);
+  padding: 0.75em 1em;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+.cart .cart-buttons .checkout:hover {
+  background-color: rgb(51, 50, 50);
 }/*# sourceMappingURL=CartPage.css.map */

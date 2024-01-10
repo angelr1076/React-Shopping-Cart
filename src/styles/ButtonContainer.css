@@ -30,6 +30,7 @@
   color: rgb(102, 0, 0);
 }
 .button-container button {
+  display: flex;
   align-self: flex-end;
   display: inline-block;
   background-color: rgb(12, 12, 12);

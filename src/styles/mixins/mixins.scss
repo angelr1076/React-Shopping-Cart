@@ -13,6 +13,7 @@
 }
 
 @mixin buyButtons() {
+  display: flex;
   align-self: flex-end;
   display: inline-block;
   background-color: $black;
