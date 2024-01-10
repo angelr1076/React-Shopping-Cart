@@ -8,10 +8,10 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   const { cartItems } = useContext(CartContext);
-  const totalItems = cartItems.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
+  const totalItems = cartItems.reduce((total, item) => {
+    const itemQuantity = Number(item.product.quantity) || 0;
+    return total + itemQuantity;
+  }, 0);
 
   return (
     <nav className='navbar'>
@@ -32,7 +32,7 @@ function Navbar() {
           ) : (
             <TfiShoppingCart className='icon' />
           )}{' '}
-          | <span className='navbar__cart'>{totalItems}</span>
+          | <span className='navbar__cart'>{Number(totalItems)}</span>
         </Link>
       </div>
     </nav>

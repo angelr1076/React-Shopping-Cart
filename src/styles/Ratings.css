@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+.ratings {
+  display: flex;
+}
+.ratings .star {
+  color: rgb(255, 215, 0);
+  font-size: 1rem;
+}
+.ratings svg {
+  margin-right: 4px;
+}/*# sourceMappingURL=Ratings.css.map */

@@ -51,6 +51,9 @@
 .navbar .navbar-cart .icon {
   margin-right: 5px;
 }
+.navbar .navbar-cart .navbar__cart {
+  margin-left: 7px;
+}
 .navbar .icon {
   font-size: 1.5rem;
 }/*# sourceMappingURL=Navbar.css.map */

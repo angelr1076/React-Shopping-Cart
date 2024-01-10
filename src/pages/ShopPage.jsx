@@ -12,7 +12,7 @@ function ShopPage() {
         id: item['3']?.value,
         title: item['6']?.value,
         description: item['7']?.value,
-        price: item['8']?.value,
+        price: item['8']?.value.toFixed(2),
         rating: item['9']?.value,
         imageUrl: item['14']?.value,
         delivery: item['11']?.value,

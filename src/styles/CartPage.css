@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+.cart {
+  box-sizing: border-box;
+  height: calc(100vh - 60px - 50px);
+}/*# sourceMappingURL=CartPage.css.map */

@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import fetchBoards from '../services/ProductService';
 import ButtonContainer from '../components/ButtonContainer';
+import Ratings from '../components/Ratings';
+
 import '../styles/ProductDetail.css';
 
 function ProductDetail() {
@@ -44,10 +46,10 @@ function ProductDetail() {
       <div className='product-details'>
         <h2>{product.title}</h2>
         <p>{product.description}</p>
-        <p>Price: ${product.price.toFixed(2)}</p>
-        <p>Rating: {product.rating}</p>
-        <p>Delivery: {product.delivery}</p>
-        <p>Seller: {product.seller}</p>
+        <p>${product.price.toFixed(2)}</p>
+        <Ratings rating={product.rating} />
+        <p>{product.delivery}</p>
+        <br />
         <hr style={{ width: '75%' }} />
         <ButtonContainer product={product} />
       </div>

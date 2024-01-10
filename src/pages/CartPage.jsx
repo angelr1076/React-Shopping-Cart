@@ -26,7 +26,7 @@ function CartPage() {
   };
 
   return (
-    <div>
+    <div className='cart'>
       <h2>My Cart</h2>
       {cartItems.length > 0 ? (
         <>

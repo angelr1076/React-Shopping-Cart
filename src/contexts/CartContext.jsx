@@ -14,6 +14,8 @@ function CartProvider({ children }) {
   }, [cartItems]);
 
   const addToCart = (product, quantityToAdd) => {
+    const numericQuantityToAdd = Number(quantityToAdd);
+
     setCartItems(prevItems => {
       const existingItemIndex = prevItems.findIndex(
         item => item.product.id === product.id
@@ -22,11 +24,11 @@ function CartProvider({ children }) {
       if (existingItemIndex !== -1) {
         return prevItems.map((item, index) =>
           index === existingItemIndex
-            ? { ...item, quantity: item.quantity + quantityToAdd }
+            ? { ...item, quantity: item.quantity + numericQuantityToAdd }
             : item
         );
       } else {
-        return [...prevItems, { product, quantity: quantityToAdd }];
+        return [...prevItems, { product, quantity: numericQuantityToAdd }];
       }
     });
   };
