@@ -9,6 +9,7 @@ function CartProvider({ children }) {
     return savedCart ? JSON.parse(savedCart) : [];
   });
   const [totalPrice, setTotalPrice] = useState(0);
+  const [itemAdded, setItemAdded] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
@@ -37,6 +38,7 @@ function CartProvider({ children }) {
         return [...prevItems, { product, quantity: numToAdd }];
       }
     });
+    setItemAdded(true);
   };
 
   const removeFromCart = productToRemove => {
@@ -69,6 +71,8 @@ function CartProvider({ children }) {
         updateQuantity,
         clearCart,
         totalPrice,
+        itemAdded,
+        setItemAdded,
       }}>
       {children}
     </CartContext.Provider>
