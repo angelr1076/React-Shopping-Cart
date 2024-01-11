@@ -1,5 +1,13 @@
 # React Shopping Cart - Santa Carla Surf Shop [![Netlify Status](https://api.netlify.com/api/v1/badges/969d36e9-6e42-4ad8-b675-4f4ce35931a3/deploy-status)](https://app.netlify.com/sites/santacarlasurf/deploys)
 
+<div style="display: flex; justify-content: space-between;">
+  <div>
+  </div>
+  <div>
+  <a href="https://santacarlasurf.netlify.app/" target="_blank">Live Site</a>
+  </div>
+</div>
+
 Welcome to Santa Carla Surf Shop, a vibrant e-commerce app built using React for the Odin Project.
 
 ## Features
