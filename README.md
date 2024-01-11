@@ -41,4 +41,4 @@ Welcome to Santa Carla Surf Shop, a vibrant e-commerce app built using React for
 4. Run the Application
 
 - `npm run dev`\
-  This will start the development server on http://localhost:5173/.
+  This will start the development server on port 5173.
