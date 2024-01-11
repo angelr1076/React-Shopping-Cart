@@ -46,8 +46,8 @@ body {
 
   .homepage {
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 85vh;
+    flex:1;
+    height: 100%;
     gap: 0;
 
     .description-content {
