@@ -46,8 +46,11 @@ body {
   .homepage {
     flex-direction: row;
     flex-wrap: wrap;
-    height: auto;
+    height: 85vh;
     gap: 0;
+  }
+  .homepage .description-content {
+    z-index: 1000;
   }
   .homepage .homepage__title {
     font-size: 1.5rem;
@@ -73,5 +76,9 @@ body {
   }
   .cart-container {
     font-size: 12px;
+  }
+  .cart-container .cart .cart-item {
+    display: block;
+    gap: 0;
   }
 }/*# sourceMappingURL=main.css.map */
