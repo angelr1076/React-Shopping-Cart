@@ -1,6 +1,7 @@
 // ProductDetail.jsx
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import fetchBoards from '../services/ProductService';
 import ButtonContainer from '../components/ButtonContainer';
 import Ratings from '../components/Ratings';
@@ -50,10 +51,14 @@ function ProductDetail() {
               <h2>{product.title}</h2>
               <p>{product.description}</p>
               <Ratings rating={product.rating} />
-              <p style={{ fontWeight: 'bold' }}>${product.price.toFixed(2)}</p>
+              <p className='price'>${product.price.toFixed(2)}</p>
               <p style={{ fontSize: '15px', color: 'blue' }}>
                 {product.delivery}
               </p>
+              <div className='links'>
+                <Link to='/shop'>Back to Products</Link>
+                <Link to='/cart'>Go to Cart</Link>
+              </div>
               <br />
               <hr style={{ width: '75%' }} />
               <ButtonContainer product={product} />

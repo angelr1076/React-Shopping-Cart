@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 .homepage {
-  box-sizing: border-box;
-  height: calc(100vh - 60px - 50px);
+  height: calc(100vh - 60px - 50px - 55px);
   display: flex;
   gap: 1em;
   padding: 1.5em;
@@ -39,22 +38,23 @@
     transform: translateY(0);
   }
 }
-.homepage .hero-content > * {
+.homepage .hero .hero-content > * {
   animation: fadeInDrop 1s ease-in-out;
 }
-.homepage .logo {
+.homepage .hero .hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.homepage .hero .logo {
   flex: 1;
   margin-right: 20px;
 }
-.homepage .description {
+.homepage .hero .description {
+  font-family: "Roboto", sans-serif;
   flex: 2;
 }
-.homepage .hero-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.homepage .shop-button {
+.homepage .hero .shop-button {
   align-self: flex-end;
   display: inline-block;
   background-color: #ce4993;
@@ -64,6 +64,6 @@
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.homepage .shop-button:hover {
+.homepage .hero .shop-button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=HomePage.css.map */

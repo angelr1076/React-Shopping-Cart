@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 :root {
   font-family: "Montserrat Alternates", sans-serif;
   line-height: 1.5;
@@ -28,4 +28,33 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgba(245, 245, 245, 0.5);
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .homepage {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .homepage .hero .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .homepage .hero .hero-content img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .product-detail {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .product-detail .product-detail__image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .cart-container {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

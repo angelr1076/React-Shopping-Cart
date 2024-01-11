@@ -25,14 +25,36 @@ body {
   background-color: $fadedWhite;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-}
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .homepage {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .hero {
+      .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
+        img {
+          width: 100%;
+          max-width: 300px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
+  .product-detail {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 1em;
+    .product-detail__image {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  }
 
-@media only screen and (min-width: 1200px) {
+  .cart-container {
+    font-size: 12px;
+  }
 }

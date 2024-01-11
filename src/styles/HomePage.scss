@@ -2,7 +2,7 @@
 @import '../styles/mixins/mixins.scss';
 
 .homepage {
-    height: calc(100vh - #{$navbarHeight} - #{$footerHeight});
+    height: calc(100vh - #{$navbarHeight} - #{$footerHeight} - 55px);
     display: flex;
     gap: 1em;
     padding: 1.5em;
@@ -25,45 +25,47 @@
       justify-content: space-between;
       align-items: center;
       max-width: 800px;
-    }
 
-    @keyframes fadeInDrop {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-
-      50% {
-        opacity: 0.5;
-        transform: translateY(-25px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .hero-content > * {
-      animation: fadeInDrop 1s ease-in-out;
-    }
-
-    .logo {
-      flex: 1;
-      margin-right: 20px;
-    }
-
-    .description {
-      flex: 2;
-    }
-
-    .hero-content {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .shop-button {
-      @include sunsetButton();
+        @keyframes fadeInDrop {
+            0% {
+              opacity: 0;
+              transform: translateY(-50px);
+            }
+        
+            50% {
+              opacity: 0.5;
+              transform: translateY(-25px);
+            }
+        
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        
+          .hero-content>* {
+            animation: fadeInDrop 1s ease-in-out;
+          }
+        
+          .hero-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+        
+          .logo {
+            flex: 1;
+            margin-right: 20px;
+          }
+        
+          .description {
+            font-family: $roboto;
+            flex: 2;
+          }
+        
+        
+          .shop-button {
+            @include sunsetButton($sunsetPink);
+          }
     }
 }

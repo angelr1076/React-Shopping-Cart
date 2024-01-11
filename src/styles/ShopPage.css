@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 .product-page {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,9 @@
 }
 .product-page .product-page__title {
   font-size: 2rem;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 800;
   margin: 0;
   background-color: rgb(255, 255, 255);
   padding: 0 1em;

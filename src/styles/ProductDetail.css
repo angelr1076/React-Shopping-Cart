@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 .product-detail {
   height: calc(100vh - 60px - 50px - 20px);
   display: flex;
@@ -33,6 +33,11 @@
 }
 .product-detail .product-details p:last-child {
   margin-bottom: 0;
+}
+.product-detail .product-details .links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
 }
 
 .loading-message {

@@ -63,7 +63,7 @@
         }
     
         25% {
-          transform: rotate(-20deg);
+          transform: rotate(-50deg);
         }
 
         50% {
@@ -71,12 +71,12 @@
         }
     
         75% {
-          transform: rotate(20deg);
+          transform: rotate(50deg);
         }
       }
   
     .shake-animation {
-      animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+      animation: shake 0.3s cubic-bezier(.0, .07, .19, .97) both;
     }
 
     .navbar-cart__icon {

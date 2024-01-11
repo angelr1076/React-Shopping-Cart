@@ -18,9 +18,9 @@ function HomePage() {
           />
           <div className='description-content'>
             <p className='description'>
-              Dedicated to the (night)lifestyle of Santa Carla, its boardwalk,
+              Dedicated to the (night) lifestyle of Santa Carla, its boardwalk,
               and its residents. Soon, you&apos;ll find information about the
-              best surf spots, local events, and more.
+              best surf spots, local events, and cautionary tales.
             </p>
             <Link to='/shop' className='shop-button'>
               Shop
