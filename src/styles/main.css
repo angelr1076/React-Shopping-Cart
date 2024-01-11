@@ -32,16 +32,25 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .navbar {
-    width: calc(100% - 20px);
+    width: calc(100% - 22px);
+  }
+  .navbar a {
+    font-size: 1rem;
   }
   .product-page .product-page__title {
-    width: calc(100% - 70px);
+    width: calc(100% - 22px);
+  }
+  .product-page .product-image {
+    max-width: 300px;
   }
   .homepage {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
     gap: 0;
+  }
+  .homepage .homepage__title {
+    font-size: 1.5rem;
   }
   .homepage .hero .hero-content {
     flex-direction: column;

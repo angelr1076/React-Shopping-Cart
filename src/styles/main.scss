@@ -27,19 +27,21 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .navbar {
-    width: calc(100% - $navbarPadding * 2);
+    width: calc(100% - $navbarPaddingLeftRight * 2);
 
     a {
       font-size: 1rem;
     }
   }
 
-  .product-page__title {
-    width: calc(100% - $navbarPadding * 2);
-  }
-
-  .product-image {
-    max-width: 300px;
+  .product-page {
+    .product-page__title {
+      width: calc(100% - $navbarPaddingLeftRight * 2);
+    }
+  
+    .product-image {
+      max-width: 300px;
+    }
   }
 
   .homepage {
