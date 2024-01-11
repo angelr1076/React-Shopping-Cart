@@ -25,10 +25,33 @@ body {
   background-color: $fadedWhite;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    width: calc(100% - $navbarPadding * 2);
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .product-page__title {
+    width: calc(100% - $navbarPadding * 2);
+  }
+
+  .product-image {
+    max-width: 300px;
+  }
+
   .homepage {
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
+    gap: 0;
+
+    .homepage__title {
+      font-size: 1.5rem;
+    }
+
     .hero {
       .hero-content {
         flex-direction: column;

@@ -30,10 +30,18 @@ body {
   background-color: rgba(245, 245, 245, 0.5);
 }
 
-@media only screen and (min-width: 350px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    width: calc(100% - 20px);
+  }
+  .product-page .product-page__title {
+    width: calc(100% - 70px);
+  }
   .homepage {
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
+    gap: 0;
   }
   .homepage .hero .hero-content {
     flex-direction: column;
