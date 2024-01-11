@@ -41,3 +41,7 @@
     }
   }
 }
+
+.loading-message {
+  @include loading-message();
+}

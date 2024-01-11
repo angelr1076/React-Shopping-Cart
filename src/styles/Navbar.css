@@ -3,7 +3,6 @@
 .navbar {
   width: 100%;
   height: 60px;
-  font-size: 1.25rem;
   font-weight: bold;
   position: sticky;
   top: 0;
@@ -19,7 +18,7 @@
 .navbar a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   position: relative;

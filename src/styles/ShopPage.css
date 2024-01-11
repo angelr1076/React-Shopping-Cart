@@ -18,7 +18,7 @@
 }
 .product-page .loading-message {
   font-size: 1.5rem;
-  color: #0d6a83;
+  color: rgb(108, 27, 27);
 }
 .product-page .products {
   background-color: rgb(255, 255, 255);

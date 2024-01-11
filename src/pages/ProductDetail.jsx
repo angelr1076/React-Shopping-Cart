@@ -9,6 +9,7 @@ import '../styles/ProductDetail.css';
 
 function ProductDetail() {
   const [product, setProduct] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
   const numericId = Number(id);
 
@@ -26,34 +27,41 @@ function ProductDetail() {
           delivery: item['11']?.value,
           seller: item['12']?.value,
         });
+        setIsLoading(false);
       }
     });
   }, [numericId]);
 
-  if (!product) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <div className='product-detail'>
-      <div className='product-img'>
-        <img
-          src={product.imageUrl}
-          alt={product.title}
-          className='product-image'
-        />
+    <>
+      <div className='product-detail'>
+        {isLoading ? (
+          <p className='loading-message'>Loading...</p>
+        ) : (
+          <>
+            <div className='product-img'>
+              <img
+                src={product.imageUrl}
+                alt={product.title}
+                className='product-image'
+              />
+            </div>
+            <div className='product-details'>
+              <h2>{product.title}</h2>
+              <p>{product.description}</p>
+              <Ratings rating={product.rating} />
+              <p style={{ fontWeight: 'bold' }}>${product.price.toFixed(2)}</p>
+              <p style={{ fontSize: '15px', color: 'blue' }}>
+                {product.delivery}
+              </p>
+              <br />
+              <hr style={{ width: '75%' }} />
+              <ButtonContainer product={product} />
+            </div>
+          </>
+        )}
       </div>
-      <div className='product-details'>
-        <h2>{product.title}</h2>
-        <p>{product.description}</p>
-        <Ratings rating={product.rating} />
-        <p style={{ fontWeight: 'bold' }}>${product.price.toFixed(2)}</p>
-        <p style={{ fontSize: '15px', color: 'blue' }}>{product.delivery}</p>
-        <br />
-        <hr style={{ width: '75%' }} />
-        <ButtonContainer product={product} />
-      </div>
-    </div>
+    </>
   );
 }
 
