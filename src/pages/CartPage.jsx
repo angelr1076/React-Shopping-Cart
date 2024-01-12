@@ -46,10 +46,6 @@ function CartPage() {
     clearCart();
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className='cart-container'>
       <div className='cart'>

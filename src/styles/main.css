@@ -38,7 +38,7 @@ body {
     font-size: 1rem;
   }
   .product-page .product-page__title {
-    width: calc(100% - 22px);
+    width: calc(100% - 11px - 2em);
   }
   .product-page .product-image {
     max-width: 300px;
