@@ -25,7 +25,7 @@ body {
   background-color: $fadedWhite;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 696px) {
   .navbar {
     width: calc(100% - $navbarPaddingLeftRight * 2);
 
@@ -89,6 +89,7 @@ body {
     .cart {
       .cart-item {
         display: block;
+        border-bottom: 1px solid $lightGrey;
         gap: 0;
       }
     }

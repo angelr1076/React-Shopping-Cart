@@ -30,7 +30,7 @@ body {
   background-color: rgba(245, 245, 245, 0.5);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 696px) {
   .navbar {
     width: calc(100% - 22px);
   }
@@ -79,6 +79,7 @@ body {
   }
   .cart-container .cart .cart-item {
     display: block;
+    border-bottom: 1px solid rgb(230, 230, 230);
     gap: 0;
   }
 }/*# sourceMappingURL=main.css.map */
