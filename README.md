@@ -1,6 +1,8 @@
-# React Shopping Cart - Santa Carla Surf Shop [![Netlify Status](https://api.netlify.com/api/v1/badges/969d36e9-6e42-4ad8-b675-4f4ce35931a3/deploy-status)](https://app.netlify.com/sites/santacarlasurf/deploys)
+# React Shopping Cart - Santa Carla Surf Shop
 
-<div style="display: flex; justify-content: space-between;">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/969d36e9-6e42-4ad8-b675-4f4ce35931a3/deploy-status)](https://app.netlify.com/sites/santacarlasurf/deploys)
+
+<div style="display: flex; justify-content: flex-start;">
   <div>
   </div>
   <div>
@@ -28,9 +30,26 @@ Welcome to Santa Carla Surf Shop, a vibrant e-commerce app built using React for
 - Quickbase API: For fetching product data.
 - LocalStorage: For cart data persistence.
 
-  ## Installation and Setup
+## Gallery
 
-  To get this project up and running on your local machine, follow these steps:
+<div style='display:flex;flex-wrap:wrap;gap:1em;'>
+<img src="./src/assets/images/homepage.png"
+     alt="Home page screenshot"
+     style="width:350px;height:196px;" />
+<img src="./src/assets/images/shop.png"
+     alt="Shop page screenshot"
+     style="width:350px;height:196px;" />
+<img src="./src/assets/images/detail.png"
+     alt="Detail page screenshot"
+     style="width:350px;height:196px;" />
+<img src="./src/assets/images/cart.png"
+     alt="Cart screenshot"
+     style="width:350px;height:196px;" />
+</div>
+
+## Installation and Setup
+
+To get this project up and running on your local machine, follow these steps:
 
 1. Clone the Repository
 
