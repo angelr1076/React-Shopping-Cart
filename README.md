@@ -10,7 +10,7 @@
   </div>
 </div>
 
-Welcome to Santa Carla Surf Shop, a vibrant e-commerce app built using React for the Odin Project.
+Welcome to Santa Carla Surf Shop, a vibrant, colorful shopping cart app built using React for the Odin Project.
 
 ## Features
 
