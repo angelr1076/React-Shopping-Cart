@@ -16,14 +16,17 @@ const boardData = {
 };
 
 async function fetchBoards() {
-  return fetch(endPoint, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify(boardData),
-  }).then(response => {
+  try {
+    const response = await fetch(endPoint, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(boardData),
+    });
     if (!response.ok) throw new Error('Network error');
-    return response.json();
-  });
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export default fetchBoards;
