@@ -16,19 +16,15 @@ const boardData = {
 };
 
 async function fetchBoards() {
-  const errorMsg = document.getElementById('error-msg');
-  errorMsg.innerHTML = '';
-
   try {
     const response = await fetch(endPoint, {
       method: 'POST',
       headers,
       body: JSON.stringify(boardData),
     });
-    if (!response.ok) throw new Error('Network error, please try again.');
+    if (!response.ok) throw new Error('Network error');
     return await response.json();
   } catch (error) {
-    errorMsg.textContent = error.message;
     console.log(error);
   }
 }

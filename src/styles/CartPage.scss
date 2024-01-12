@@ -49,11 +49,10 @@
       justify-content: flex-start;
       gap: 20px;
       margin: 20px 0;
-
       
       .buy {
           @include buyButtons($sunsetRed);
-        }
+      }
 
       .icon {
         font-size: 1.25rem;

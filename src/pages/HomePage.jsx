@@ -22,7 +22,7 @@ function HomePage() {
               and its residents. Soon, you&apos;ll find information about the
               best surf spots, local events, and cautionary tales.
             </p>
-            <Link to='/shop' className='shop-button'>
+            <Link to='/shop' className='shop-button btn'>
               Shop
             </Link>
           </div>

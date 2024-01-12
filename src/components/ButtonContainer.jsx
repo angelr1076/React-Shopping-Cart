@@ -50,7 +50,7 @@ function ButtonContainer({ product }) {
         <button className='icon plus btn' onClick={incrementQuantity}>
           <FiPlusCircle />
         </button>
-        <button className='add' onClick={handleAddToCart}>
+        <button className='add btn' onClick={handleAddToCart}>
           Add to Cart
         </button>
       </div>

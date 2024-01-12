@@ -23,6 +23,10 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+.btn {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
