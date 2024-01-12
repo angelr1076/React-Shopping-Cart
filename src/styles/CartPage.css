@@ -87,4 +87,24 @@
 }
 .cart-container .cart .cart-buttons .checkout:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.cart-container .cart .cart-buttons .continue-shopping {
+  display: flex;
+  align-self: flex-end;
+  display: inline-block;
+  background-color: #eeaf61;
+  color: rgb(255, 255, 255);
+  padding: 0.75em 1em;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 7px 20px;
+  font-size: 1rem;
+}
+.cart-container .cart .cart-buttons .continue-shopping:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=CartPage.css.map */

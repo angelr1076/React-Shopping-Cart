@@ -1,12 +1,15 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '../contexts/CartContext';
+import { Link } from 'react-router-dom';
 import { formatPriceWithComma, truncateTitle } from '../utils/Helpers';
 import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
+import Modal from '../components/Modal';
 import '../styles/CartPage.css';
 
 function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, clearCart, totalPrice } =
     useContext(CartContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const renderCartItem = item => (
     <div key={item.product.id} className='cart-item'>
@@ -36,8 +39,15 @@ function CartPage() {
   );
 
   const handleCheckout = () => {
-    alert('Thank you for your purchase!');
+    setIsModalOpen(true);
+  };
+
+  const handleConfirmCheckout = () => {
     clearCart();
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -50,6 +60,9 @@ function CartPage() {
             <div className='items'>{cartItems.map(renderCartItem)}</div>
             <hr className='cart-item-divider' />
             <div className='cart-buttons'>
+              <Link to='/shop' className='continue-shopping btn'>
+                Continue Shopping
+              </Link>
               <button className='checkout btn' onClick={handleCheckout}>
                 Checkout
               </button>
@@ -57,6 +70,14 @@ function CartPage() {
           </>
         ) : (
           <p>Your cart is empty.</p>
+        )}
+        {isModalOpen && (
+          <Modal
+            title='Confirm Checkout'
+            message='Are you sure you want to proceed to checkout?'
+            handleCloseModal={() => setIsModalOpen(false)}
+            handleConfirmCheckout={handleConfirmCheckout}
+          />
         )}
       </div>
     </div>

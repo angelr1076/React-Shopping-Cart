@@ -87,10 +87,16 @@ body {
     font-size: 12px;
 
     .cart {
+
       .cart-item {
         display: block;
         border-bottom: 1px solid $lightGrey;
         gap: 0;
+      }
+
+      .continue-shopping, .checkout {
+        padding: 0;
+        font-size: 0.8rem;
       }
     }
   }
