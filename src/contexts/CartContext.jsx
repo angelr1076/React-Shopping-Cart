@@ -11,6 +11,7 @@ function CartProvider({ children }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [itemAdded, setItemAdded] = useState(false);
 
+  // Update local storage when cart items change
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
     const total = cartItems.reduce(
