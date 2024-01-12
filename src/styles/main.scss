@@ -35,9 +35,6 @@ body {
   }
 
   .product-page {
-    .product-page__title {
-      width: calc(100% - $navbarPaddingLeftRight - 1em * 2);
-    }
   
     .product-image {
       max-width: 300px;
