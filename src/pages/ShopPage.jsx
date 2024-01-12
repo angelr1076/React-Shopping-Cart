@@ -36,6 +36,7 @@ function ShopPage() {
           ))}
         </div>
       )}
+      <div id='error-msg'></div>
     </div>
   );
 }
