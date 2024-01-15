@@ -54,7 +54,7 @@ function CartPage() {
         {cartItems.length > 0 ? (
           <>
             <div className='items'>{cartItems.map(renderCartItem)}</div>
-            <hr className='cart-item-divider' />
+            <hr className='separator' />
             <div className='cart-buttons'>
               <Link to='/shop' className='continue-shopping btn'>
                 Continue Shopping

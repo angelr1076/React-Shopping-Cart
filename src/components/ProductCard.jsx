@@ -7,7 +7,7 @@ import '../styles/ProductCard.css';
 
 function ProductCard({ product }) {
   return (
-    <div className='product-card'>
+    <div className='product-card' style={{ marginBottom: '1.5em' }}>
       <Link to={`/shop/${product.id}`}>
         <div className='product-image-container'>
           <img

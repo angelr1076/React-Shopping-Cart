@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import fetchBoards from '../services/ProductService';
 import ButtonContainer from '../components/ButtonContainer';
 import Ratings from '../components/Ratings';
-
 import '../styles/ProductDetail.css';
 
 function ProductDetail() {
@@ -60,7 +59,6 @@ function ProductDetail() {
                 <Link to='/cart'>Go to Cart</Link>
               </div>
               <br />
-              <hr style={{ width: '75%' }} />
               <ButtonContainer product={product} />
             </div>
           </>

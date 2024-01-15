@@ -25,6 +25,12 @@
   color: $bloodRedFaded;
 }
 
+.horizontal-line {
+  width: 75%;
+  border: none;
+  color: $lightGrey;
+}
+
 @mixin buyButtons($color) {
   display: flex;
   align-self: flex-end;

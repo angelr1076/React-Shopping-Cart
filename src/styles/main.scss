@@ -27,6 +27,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: $fadedWhite;
+
+  .separator {
+    @include horizontal-line;
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 696px) {
