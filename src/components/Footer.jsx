@@ -3,7 +3,7 @@ import '../styles/Footer.css';
 function Footer() {
   return (
     <footer>
-      <p>© 2024 - Created by Angel Rodriguez</p>
+      <p>© 2024 Angel Rodriguez. All Rights Reserved.</p>
     </footer>
   );
 }
