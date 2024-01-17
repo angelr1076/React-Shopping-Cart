@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 export const CartContext = createContext();
@@ -8,17 +8,17 @@ function CartProvider({ children }) {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
-  const [totalPrice, setTotalPrice] = useState(0);
   const [itemAdded, setItemAdded] = useState(false);
 
-  // Update local storage when cart items change
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cartItems));
-    const total = cartItems.reduce(
+  const totalPrice = useMemo(() => {
+    return cartItems.reduce(
       (sum, item) => sum + item.quantity * item.product.price,
       0
     );
-    setTotalPrice(total);
+  }, [cartItems]);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addToCart = (product, quantityToAdd) => {
