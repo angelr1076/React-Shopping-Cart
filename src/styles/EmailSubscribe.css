@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+.horizontal-line {
+  width: 75%;
+  border: none;
+  color: rgb(230, 230, 230);
+}
+
+.email-subscribe {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+}
+.email-subscribe .email-input {
+  padding: 0.8em;
+  margin-right: 1em;
+  border: none;
+  width: 70%;
+  max-width: 300px;
+}
+.email-subscribe .subscribe-button {
+  margin-top: 1em;
+  display: inline-block;
+  background-color: #0d6a83;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.email-subscribe .subscribe-button:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=EmailSubscribe.css.map */

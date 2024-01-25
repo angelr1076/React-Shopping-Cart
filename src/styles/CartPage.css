@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+.horizontal-line {
+  width: 75%;
+  border: none;
+  color: rgb(230, 230, 230);
+}
+
 .cart-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
   width: 100%;
+  margin-bottom: 2em;
 }
 .cart-container .cart {
   display: flex;
@@ -29,11 +36,6 @@
   flex-direction: column;
   align-items: flex-end;
 }
-.cart-container .cart .cart-item-divider {
-  width: 75%;
-  border: none;
-  border-top: 1px solid rgb(230, 230, 230);
-}
 .cart-container .cart .cart-item {
   display: flex;
   align-items: center;
@@ -50,6 +52,7 @@
   align-self: flex-end;
   display: inline-block;
   background-color: #ee5d6c;
+  font-family: "Montserrat Alternates", sans-serif;
   color: rgb(255, 255, 255);
   padding: 0.75em 1em;
   font-size: 12px;
@@ -74,6 +77,7 @@
   align-self: flex-end;
   display: inline-block;
   background-color: #0d6a83;
+  font-family: "Montserrat Alternates", sans-serif;
   color: rgb(255, 255, 255);
   padding: 0.75em 1em;
   font-size: 12px;
@@ -94,6 +98,7 @@
   align-self: flex-end;
   display: inline-block;
   background-color: #eeaf61;
+  font-family: "Montserrat Alternates", sans-serif;
   color: rgb(255, 255, 255);
   padding: 0.75em 1em;
   font-size: 12px;

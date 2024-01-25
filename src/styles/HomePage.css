@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&family=Roboto&family=Salsa&display=swap");
+.horizontal-line {
+  width: 75%;
+  border: none;
+  color: rgb(230, 230, 230);
+}
+
 .homepage {
   height: calc(100vh - 60px - 50px - 55px);
   display: flex;

@@ -1,0 +1,21 @@
+@import '../styles/variables/variables.scss';
+@import '../styles/mixins/mixins.scss';
+
+.email-subscribe {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+
+  .email-input {
+    padding: 0.8em;
+    margin-right: 1em;
+    border: none;
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .subscribe-button {
+    @include subscribeButton($sunsetBlue);
+  }
+}

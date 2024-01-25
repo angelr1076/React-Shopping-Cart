@@ -105,4 +105,22 @@ body {
       }
     }
   }
+
+      .footer {
+        padding: 1em;
+        flex-direction: column;
+      }
+  
+      .footer-content {
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 20px;
+      }
+  
+      .email-subscribe {
+        .email-input {
+          margin-right: 0;
+        }
+      }
+    
 }

@@ -28,12 +28,14 @@ function Navbar() {
     <nav className='navbar'>
       <div className='logo-placeholder'>
         <Link to='/'>
-          <GiWaveSurfer className='icon' /> Home
+          <GiWaveSurfer className='icon' />{' '}
+          <span className='navbar__title'>Home</span>
         </Link>
       </div>
       <div className='navbar-shop'>
         <Link to='/shop'>
-          <MdOutlineSurfing className='icon' /> Shop
+          <MdOutlineSurfing className='icon' />{' '}
+          <span className='navbar__title'>Shop</span>
         </Link>
       </div>
       <div className='navbar-cart'>
