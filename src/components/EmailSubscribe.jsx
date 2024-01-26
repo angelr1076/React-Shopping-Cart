@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
-import '../styles/EmailSubscribe.scss';
+import '../styles/EmailSubscribe.css';
 
 function EmailSubscriptionForm() {
   const [email, setEmail] = useState('');

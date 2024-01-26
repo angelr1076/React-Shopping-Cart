@@ -15,7 +15,6 @@
   align-items: center;
 }
 .footer .footer-content {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

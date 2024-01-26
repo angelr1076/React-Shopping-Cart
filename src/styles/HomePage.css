@@ -7,7 +7,6 @@
 }
 
 .homepage {
-  height: calc(100vh - 60px - 50px - 55px);
   display: flex;
   gap: 1em;
   padding: 1.5em;
