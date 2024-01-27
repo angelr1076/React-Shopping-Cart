@@ -13,14 +13,15 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   gap: 10px;
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: #0d6a83 rgb(230, 230, 230);
 }
 .carousel .carousel-image {
   flex: 0 0 auto;
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   position: relative;
+  box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.1);
 }
 .carousel .carousel-image img {
   width: 100%;
@@ -29,14 +30,5 @@
      object-fit: cover;
 }
 .carousel::-webkit-scrollbar {
-  width: 10px;
-}
-.carousel::-webkit-scrollbar-track {
-  background: #e86769;
-}
-.carousel::-webkit-scrollbar-thumb {
-  background: #ce4993;
-}
-.carousel::-webkit-scrollbar-thumb:hover {
-  background: #b43079;
+  display: none;
 }/*# sourceMappingURL=ImageCarousel.css.map */
