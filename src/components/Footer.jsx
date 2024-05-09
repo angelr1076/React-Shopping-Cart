@@ -7,7 +7,7 @@ import '../styles/Footer.scss';
 
 function Footer() {
   return (
-    <footer className='footer'>
+    <footer className='footer' style={{ color: '#fff' }}>
       <div className='footer-content'>
         <div className='footer-column'>
           <h4 className='footer-title'>Establishment</h4>
@@ -35,7 +35,7 @@ function Footer() {
           </ul>
         </div>
         <div className='footer-column'>
-          <h4 className='footer-title'>React Out</h4>
+          <h4 className='footer-title'>Contact Us</h4>
           <ul className='footer-links'>
             <li>
               <IoIosPhonePortrait className='icon' />
