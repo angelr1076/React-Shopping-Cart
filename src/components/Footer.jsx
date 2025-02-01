@@ -56,7 +56,9 @@ function Footer() {
         <EmailSubscriptionForm />
       </div>
       <div className='footer-bottom'>
-        <p>© 2024 Angel Rodriguez. All Rights Reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Angel Rodriguez. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
