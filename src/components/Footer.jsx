@@ -42,10 +42,10 @@ function Footer() {
               1-800-555-5555
             </li>
             <li>
-              <FaRegClock className='icon' /> 9am-5pm EST, M-F
+              <FaRegClock className='icon' /> 9am-5pm PST, M-F
             </li>
             <li>
-              <FaRegClock className='icon' /> 9am-1pm EST, Sat
+              <FaRegClock className='icon' /> 9am-1pm PST, Sat
             </li>
             <li>
               <RiCalendarCloseLine className='icon' />
